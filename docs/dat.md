@@ -29,7 +29,7 @@ Voici le diagramme de Gantt lié au planning du projet :
 - **Hyperviseur** : UTM (VMs hébergées sur la machine hôte)  
 - **Mode réseau** : NAT (réglage utilisé pour les mises à jour)
 
-![Schéma réseau](diag-res.png)
+![Schéma réseau](diagres.png)
 
 ---
 
