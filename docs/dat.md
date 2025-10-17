@@ -108,6 +108,11 @@ Voici le diagramme de Gantt lié au planning du projet :
 
 ![Get-ADDomain via WinRM](images/getadddomain.png)
 
+![WinRM](images/win1.png)
+
+![WinRM](images/win2.png)
+
+
 ---
 
 ### SMB (DC)
