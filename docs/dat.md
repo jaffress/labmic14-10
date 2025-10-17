@@ -22,9 +22,6 @@ Voici le diagramme de Gantt lié au planning du projet :
 
 ![Diagramme de Gantt](images/diagram.png)
 
-## Schéma réseau du Lab
-![Schema réseau du Lab](diag-res.png)
-
 ---
 
 ## 2 — Schéma réseau
@@ -32,7 +29,7 @@ Voici le diagramme de Gantt lié au planning du projet :
 - **Hyperviseur** : UTM (VMs hébergées sur la machine hôte)  
 - **Mode réseau** : NAT (réglage utilisé pour les mises à jour)
 
-![Schéma réseau](images/network-diagram.png)
+![Schéma réseau](diag-res.png)
 
 ---
 
