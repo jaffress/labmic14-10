@@ -18,7 +18,9 @@
 - 1 Linux Server (Ubuntu) = application métier (VulnerableLightApp) + SSH
 
 **Livrables** : preuves listées en §7, DAT au format PDF envoyé.
+Voici le diagramme de Gantt lié au planning du projet :
 
+![Diagramme de Gantt](images/diagram.png)
 ---
 
 ## 2 — Schéma réseau
@@ -45,7 +47,6 @@
 - **vCPU** : 2
 - **RAM** : 4 GiB
 - **Disk** : 40 GiB
-- **Joint au domaine** (si déployé)
 
 ![Windows 10 Installer](images/installerwin10.png)
 
