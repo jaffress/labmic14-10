@@ -21,6 +21,10 @@
 Voici le diagramme de Gantt lié au planning du projet :
 
 ![Diagramme de Gantt](images/diagram.png)
+
+## Schéma réseau du Lab
+![Schéma réseau du Lab](diag-res.png)
+
 ---
 
 ## 2 — Schéma réseau
