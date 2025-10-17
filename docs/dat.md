@@ -17,7 +17,7 @@
 - 1 Windows Workstation = client joint au domaine (non déployé — tests réalisés depuis Mac)
 - 1 Linux Server (Ubuntu) = application métier (VulnerableLightApp) + SSH
 
-**Livrables** : preuves listées en §7, DAT au format PDF envoyé.
+**Livrables** : preuves listées, DAT au format PDF n'as pas pu envoyé.
 Voici le diagramme de Gantt lié au planning du projet :
 
 ![Diagramme de Gantt](images/diagram.png)
