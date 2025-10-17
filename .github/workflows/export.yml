@@ -1,0 +1,31 @@
+name: Export DAT to PDF
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Pandoc and wkhtmltopdf
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc wkhtmltopdf
+
+      - name: Convert Markdown to PDF
+        run: |
+          cd doc
+          pandoc DAT.md -o DAT.pdf --from markdown --to pdf --standalone --resource-path=.:images
+
+      - name: Upload PDF as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: DAT-PDF
+          path: doc/DAT.pdf
