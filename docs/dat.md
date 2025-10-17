@@ -112,6 +112,8 @@ Voici le diagramme de Gantt lié au planning du projet :
 
 ![WinRM](images/win2.png)
 
+![WinRM](images/win3.png)
+
 
 ---
 
