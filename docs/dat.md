@@ -3,7 +3,7 @@
 ## 0 — Métadonnées
 - Projet : Lab AD + Linux app (VulnerableLightApp)  
 - Auteur : Elifsu JAFFRES  
-- Branche repo : `docs`  
+- Branche repo : `main`  
 - Date : 2025-10-16  
 - Emplacement des captures : `images/`  
 - Emplacement gestionnaire de secrets : sur MacBook
@@ -67,26 +67,38 @@ Livrables : preuves listées en §7, DAT au format PDF envoyé.
 - Capture test : `images/test-connexWinRm.png`
 
 ### SMB (DC)
-- Vérif DC : `Get-SmbShare` → `images/smbshare.png`  
-- Vérif montage Ubuntu : `images/smbubuntu.png`, `images/readonly.png`, `images/readwrite.png`
+- Vérif DC : `Get-SmbShare`  
+- Capture : `images/smbshare.png`  
+- Vérif montage Ubuntu :  
+  - `images/smbubuntu.png`  
+  - `images/readonly.png`  
+  - `images/readwrite.png`
 
 ### Web (Ubuntu)
 - Service systemd : `/etc/systemd/system/vla.service`  
 - Commandes : `sudo systemctl status vla.service`, `journalctl -u vla.service`, `ss -ltnp`  
-- Preuves service & écoute : `images/connexion-dotnet.png`, `images/dotnet-preuve.png`, `images/dot-vul.png`  
-- Tests HTTP (réponse attendue) : `curl -I http://192.168.64.30:4000` → 401  
-- Captures : `images/curl-vuln-macbook.png`, `images/web-req-win-vulapp.png`, `images/unauth-mac-vull.png`
+- Preuves service & écoute :  
+  - `images/connexion-dotnet.png`  
+  - `images/dotnet-preuve.png`  
+  - `images/dot-vul.png`  
+- Tests HTTP :  
+  - `images/curl-vuln-macbook.png`  
+  - `images/web-req-win-vulapp.png`  
+  - `images/unauth-mac-vull.png`
 
 ### SSH (Ubuntu)
-- Accessible pour membres du groupe `sudo`  
-- Captures / preuves : `images/connexionsshubuntuviamac.png`, `images/sshserverubuntu.png`, `images/test-connexionubuntu.png`
+- Captures / preuves :  
+  - `images/connexionsshubuntuviamac.png`  
+  - `images/sshserverubuntu.png`  
+  - `images/test-connexionubuntu.png`
 
 ### BadBlood
-- Script exécuté sur le DC, sortie capturée : `images/scriptbadblood.png`
+- Script exécuté sur le DC  
+- Capture : `images/scriptbadblood.png`
 
 ---
 
-## 7 — Preuves / captures (fichiers présents dans `images/`)
+## 7 — Preuves / captures
 
 - ISO / Hashs  
   - `images/isos-sha256.png` (si disponible)
@@ -139,16 +151,12 @@ Livrables : preuves listées en §7, DAT au format PDF envoyé.
   - `images/domaincontroller-win.png`  
   - `images/pinubuntutowin.png`
 
-> Si un fichier n'existe pas exactement sous ce nom dans `images/`, adapte le nom dans le DAT ou renomme l’image dans le repo.
-
 ---
 
-## 8 — Procédures / commandes utiles (Annexe)
+## 8 — Procédures / commandes utiles
 
 ### Vérif écoute VLA
 ```bash
 sudo systemctl status vla.service -l
 sudo journalctl -u vla.service -n 200 --no-pager
 ss -ltnp | grep dotnet
-
-
