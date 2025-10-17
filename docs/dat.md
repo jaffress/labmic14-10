@@ -174,7 +174,20 @@ Voici le diagramme de Gantt lié au planning du projet :
 
 ### ISO / Hashs
 
-![Hashs SHA256 des ISOs](images/isos-sha256.png)
+elifsu@MacBook-Pro-de-Elifsu desktop % cd LabISOs  
+elifsu@MacBook-Pro-de-Elifsu LabISOs % shasum -a 256 SERVER_EVAL_x64FRE_*.iso
+a32de43bd5201f3665d323d3f384c6eec4091e8b7eb4e7f35ae18455274e3ee8  SERVER_EVAL_x64FRE_fr-fr.iso
+
+
+
+elifsu@MacBook-Pro-de-Elifsu LabISOs % shasum -a 256 Win10_*.iso
+7b7f99e804b50f5e738ffdfc571803ccdcfe139599392496048fd32c5eaedff9  Win10_22H2_French_x64v1.iso
+
+
+elifsu@MacBook-Pro-de-Elifsu LabISOs % shasum -a 256 ubuntu*.iso
+ecf579664c0be9e4a68ae7b617399ce943c2dee49eb1fcc6702a5671a4f88320  ubuntu-25.10-live-server-arm64.iso
+elifsu@MacBook-Pro-de-Elifsu LabISOs % 
+
 
 ### VM / hyperviseur screenshots
 
